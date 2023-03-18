@@ -1,0 +1,26 @@
+.clock-area{
+   text-align: center;
+}
+
+#country-list-container{
+   text-align: center;
+   
+
+}
+#country-list{
+text-align: center;
+padding: 10px 5px;
+font-size: 1rem;
+font-weight: 800;
+background-color: purple;
+color: white;
+border-radius: 1.5rem;
+border: 0;
+cursor: pointer;
+outline: 0;
+transition: .5s;
+}
+#country-list:hover{
+   padding: 10px 0px;
+   box-shadow: 1px 3px 6px 0px rgb(124, 124, 124);
+}
