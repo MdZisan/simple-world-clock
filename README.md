@@ -1,1 +1,1 @@
-<a href="https://mdzisan.github.io/simple-world-clock/">LIVE SITE</a>
+<a href="https://mdzisan.github.io/simple-world-clock/" target="_blank">LIVE SITE</a>
