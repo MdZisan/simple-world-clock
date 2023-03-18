@@ -1,5 +1,17 @@
 .clock-area{
    text-align: center;
+
+}
+.clock-area h1{
+   font-size: 6rem;
+}
+.clock-display{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center ;
+   height: 95vh;
+   border: 1px  dotted black;
 }
 
 #country-list-container{
