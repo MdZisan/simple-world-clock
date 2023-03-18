@@ -6,22 +6,24 @@ const loadData = (data) => {
 };
 const displayData = (data) => {
   // console.log(data.error);
-  console.log(data);
+  // console.log(data);
   const Data = data;
 
   const time = Data.split("T")[1].slice(0, -12);
-  console.log(time);
+  // console.log(time);
 
   const min = time.slice(2, -1);
 
   const uniTime = time.slice(0, -7);
+  // console.log(uniTime);
 
   const hour = uniTime > 12 ? uniTime - 12 : uniTime;
+  const dayNight = uniTime < 12 ? 'Am' : 'Pm';
   
 //   const date = new Date(data); // convert UTC datetime string to local time
 //   const time = date.toLocaleTimeString('en-US', {hour: '2-digit', minute: 'numeric', second: 'numeric', hour12: true}); // format time in 12-hour format
 //   console.log(time);
-  document.getElementById("time").innerHTML = `${hour < 1 ?parseInt(hour) +12 : hour}${min}`;
+  document.getElementById("time").innerHTML = `${hour < 1 ?parseInt(hour) +12 : hour}${min} ${dayNight}`;
 //   document.getElementById("time").innerHTML = time;
 };
 // displayData()
@@ -43,7 +45,7 @@ const displayCountryName = (data) => {
 };
 function select() {
   const currentCountry = countryList.value;
-  console.log(currentCountry);
+  // console.log(currentCountry);
   loadData(currentCountry);
 
 }
